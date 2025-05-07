@@ -1,6 +1,6 @@
 import streamlit as st
 import os
-
+import streamlit.components.v1 as components
 # Read the content of the HTML and CSS files
 html_file_path = "index.html"
 css_file_path = "styles.css"
@@ -16,3 +16,6 @@ with open(css_file_path, "r") as css_file:
 
 # Display the HTML content
 st.markdown(html_content, unsafe_allow_html=True)
+# Display the HTML content in Streamlit
+import streamlit.components.v1 as components
+components.html(html_content, height=1923)
